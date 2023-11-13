@@ -55,7 +55,7 @@ function maybeAddRandomEvent() {
     .filter(box => !!box.events)
     .filter(box => kingdom.some(p => p.box.name === box.name))
     .map(box => box.events)
-    .reduce((eventsA, eventsB) => eventsA.concat(eventsB));
+    .reduce((eventsA, eventsB) => eventsA.concat(eventsB), []);
 
   if (events.length > 0 && Math.random() < defaultProbabilities.event) {
     const event = events[Math.floor(Math.random() * events.length)];
@@ -73,7 +73,7 @@ function maybeAddRandomLandmark() {
     .filter(box => !!box.landmarks)
     .filter(box => kingdom.some(p => p.box.name === box.name))
     .map(box => box.landmarks)
-    .reduce((landmarksA, landmarksB) => landmarksA.concat(landmarksB));
+    .reduce((landmarksA, landmarksB) => landmarksA.concat(landmarksB), []);
 
   if (landmarks.length > 0 && Math.random() < defaultProbabilities.landmark) {
       const landmark = landmarks[Math.floor(Math.random() * landmarks.length)];
