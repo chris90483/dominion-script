@@ -31,7 +31,7 @@ for (let i = 0; i < 10; i++) {
 }
 
 for (const entry of kingdom) {
-	console.log(`${dominion.boxNames[entry.box.name]}: ${entry.pile.name} ${!!entry.pile.cards ? entry.pile.cards.map(c => c.name).join(',') : ''}`);
+	console.log(`${dominion.boxNames[entry.box.name]}: ${entry.pile.name} ${!!entry.pile.cards ? '(' + entry.pile.cards.map(c => c.name).join(', ') + ')' : ''}`);
 }
 console.log();
 
