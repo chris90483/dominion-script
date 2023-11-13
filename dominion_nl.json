@@ -1,425 +1,1070 @@
 {
-	"boxes": {
-		"Basisspel (2e editie)": {
+  "boxNames": {
+    "basegame (2nd edition)": "Basisspel (2e editie)",
+    "seaside (2nd edition)": "Hijs de zeilen! (2e editie)",
+    "allies": "Bondgenoten",
+    "menagerie": "Menagerie",
+    "prosperity": "Welvaart",
+    "alchemy": "De Alchemisten",
+    "cornucopia": "Overvloed",
+    "empires": "Keizerrijken"
+  },
+  "boxes": [
+    {
+	  "name": "basegame (2nd edition)",
       "cards": [
-        {"name": "Ambachtsman"},
-        {"name": "Bandiet"},
-        {"name": "Bureaucraat"},
-        {"name": "Kelder"},
-        {"name": "Kapel"},
-        {"name": "Raadszaal"},
-        {"name": "Festival"},
-        {"name": "Voorbode"},
-        {"name": "Laboratorium"},
-        {"name": "Bibliotheek"},
-        {"name": "Markt"},
-        {"name": "Koopman"},
-        {"name": "Militie"},
-        {"name": "Mijn"},
-        {"name": "Slotgracht"},
-        {"name": "Geldschieter"},
-        {"name": "Wilddief"},
-        {"name": "Verbouwing"},
-        {"name": "Cipier"},
-        {"name": "Smidse"},
-        {"name": "Troonzaal"},
-        {"name": "Vazal"},
-        {"name": "Dorp"},
-        {"name": "Heks"},
-        {"name": "Werkplaats"}
+        {
+          "name": "Ambachtsman"
+        },
+        {
+          "name": "Bandiet"
+        },
+        {
+          "name": "Bureaucraat"
+        },
+        {
+          "name": "Kelder"
+        },
+        {
+          "name": "Kapel"
+        },
+        {
+          "name": "Raadszaal"
+        },
+        {
+          "name": "Festival"
+        },
+        {
+          "name": "Voorbode"
+        },
+        {
+          "name": "Laboratorium"
+        },
+        {
+          "name": "Bibliotheek"
+        },
+        {
+          "name": "Markt"
+        },
+        {
+          "name": "Koopman"
+        },
+        {
+          "name": "Militie"
+        },
+        {
+          "name": "Mijn"
+        },
+        {
+          "name": "Slotgracht"
+        },
+        {
+          "name": "Geldschieter"
+        },
+        {
+          "name": "Wilddief"
+        },
+        {
+          "name": "Verbouwing"
+        },
+        {
+          "name": "Cipier"
+        },
+        {
+          "name": "Smidse"
+        },
+        {
+          "name": "Troonzaal"
+        },
+        {
+          "name": "Vazal"
+        },
+        {
+          "name": "Dorp"
+        },
+        {
+          "name": "Heks"
+        },
+        {
+          "name": "Werkplaats"
+        }
       ]
-    }, 
-		"Hijs de zeilen! (2e editie)": {
+    },
+    {
+	  "name": "seaside (2nd edition)",
       "cards": [
-        {"name": "Aap"},
-        {"name": "Afvalverwerker"},
-        {"name": "Bazaar"},
-        {"name": "Beurzensnijder"},
-        {"name": "Blokkade"},
-        {"name": "Getijdenpoelen"},
-        {"name": "Handelsschip"},
-        {"name": "Haven"},
-        {"name": "Inheems Dorp"},
-        {"name": "Karavaan"},
-        {"name": "Matroos"},
-        {"name": "Pakhuis"},
-        {"name": "Piraat"},
-        {"name": "Schatkaart"},
-        {"name": "Schatkamer"},
-        {"name": "Scheepswerf"},
-        {"name": "Sextant"},
-        {"name": "Smokkelaar"},
-        {"name": "Strateeg"},
-        {"name": "Uitkijk"},
-        {"name": "Vissersdorp"},
-        {"name": "Voorpost"},
-        {"name": "Vuurtoren"},
-        {"name": "Zeekaart"},
-        {"name": "Zeekol"},
-        {"name": "Zeerover"},
-        {"name": "Eiland"}
+        {
+          "name": "Aap"
+        },
+        {
+          "name": "Afvalverwerker"
+        },
+        {
+          "name": "Bazaar"
+        },
+        {
+          "name": "Beurzensnijder"
+        },
+        {
+          "name": "Blokkade"
+        },
+        {
+          "name": "Getijdenpoelen"
+        },
+        {
+          "name": "Handelsschip"
+        },
+        {
+          "name": "Haven"
+        },
+        {
+          "name": "Inheems Dorp"
+        },
+        {
+          "name": "Karavaan"
+        },
+        {
+          "name": "Matroos"
+        },
+        {
+          "name": "Pakhuis"
+        },
+        {
+          "name": "Piraat"
+        },
+        {
+          "name": "Schatkaart"
+        },
+        {
+          "name": "Schatkamer"
+        },
+        {
+          "name": "Scheepswerf"
+        },
+        {
+          "name": "Sextant"
+        },
+        {
+          "name": "Smokkelaar"
+        },
+        {
+          "name": "Strateeg"
+        },
+        {
+          "name": "Uitkijk"
+        },
+        {
+          "name": "Vissersdorp"
+        },
+        {
+          "name": "Voorpost"
+        },
+        {
+          "name": "Vuurtoren"
+        },
+        {
+          "name": "Zeekaart"
+        },
+        {
+          "name": "Zeekol"
+        },
+        {
+          "name": "Zeerover"
+        },
+        {
+          "name": "Eiland"
+        }
       ]
-    }, 
-		"Bondgenoten": {
+    },
+    {
+	  "name": "allies",
       "cards": [
-        {"name": "Afgezant"},
-        {"name": "Barbaar"},
-        {"name": "Bijwerken"},
-        {"name": "Contract"},
-        {"name": "Gildenmeester"},
-        {"name": "Handelaarskamp"},
-        {"name": "Hielenlikker"},
-        {"name": "Hoofdstad"},
-        {"name": "Houtwerker"},
-        {"name": "Importeur"},
-        {"name": "Jager"},
-        {"name": "Kerstbal"},
-        {"name": "Koninklijk galeischip"},
-        {"name": "Kunstmuseum"},
-        {"name": "Markies"},
-        {"name": "Nederzetting"},
-        {"name": "Ondergeschikte"},
-        {"name": "Renbode"},
-        {"name": "Ruilen"},
-        {"name": "Schildwacht"},
-        {"name": "Specialist"},
-        {"name": "Struikrover"},
-        {"name": "Tirailleur"},
-        {"name": "Waard"},
-        {"name": "Zaakwaarnemer"}
+        {
+          "name": "Afgezant"
+        },
+        {
+          "name": "Barbaar"
+        },
+        {
+          "name": "Bijwerken"
+        },
+        {
+          "name": "Contract"
+        },
+        {
+          "name": "Gildenmeester"
+        },
+        {
+          "name": "Handelaarskamp"
+        },
+        {
+          "name": "Hielenlikker"
+        },
+        {
+          "name": "Hoofdstad"
+        },
+        {
+          "name": "Houtwerker"
+        },
+        {
+          "name": "Importeur"
+        },
+        {
+          "name": "Jager"
+        },
+        {
+          "name": "Kerstbal"
+        },
+        {
+          "name": "Koninklijk galeischip"
+        },
+        {
+          "name": "Kunstmuseum"
+        },
+        {
+          "name": "Markies"
+        },
+        {
+          "name": "Nederzetting"
+        },
+        {
+          "name": "Ondergeschikte"
+        },
+        {
+          "name": "Renbode"
+        },
+        {
+          "name": "Ruilen"
+        },
+        {
+          "name": "Schildwacht"
+        },
+        {
+          "name": "Specialist"
+        },
+        {
+          "name": "Struikrover"
+        },
+        {
+          "name": "Tirailleur"
+        },
+        {
+          "name": "Waard"
+        },
+        {
+          "name": "Zaakwaarnemer"
+        }
       ],
       "combinedPiles": [
         {
           "name": "Conflicten",
           "cards": [
-            {"name": "Strijdplan"},
-            {"name": "Boogschutter"},
-            {"name": "Krijgsheer"},
-            {"name": "Gebied"}
+            {
+              "name": "Strijdplan"
+            },
+            {
+              "name": "Boogschutter"
+            },
+            {
+              "name": "Krijgsheer"
+            },
+            {
+              "name": "Gebied"
+            }
           ]
         },
         {
           "name": "Tovenaars",
           "cards": [
-            {"name": "Student"},
-            {"name": "Illusionist"},
-            {"name": "Heksenmeester"},
-            {"name": "Zielenzuiger"}
+            {
+              "name": "Student"
+            },
+            {
+              "name": "Illusionist"
+            },
+            {
+              "name": "Heksenmeester"
+            },
+            {
+              "name": "Zielenzuiger"
+            }
           ]
         },
         {
           "name": "Zwerftochten",
           "cards": [
-            {"name": "Oude landkaart"},
-            {"name": "Reis"},
-            {"name": "Verzonken schat"},
-            {"name": "Verre kust"}
+            {
+              "name": "Oude landkaart"
+            },
+            {
+              "name": "Reis"
+            },
+            {
+              "name": "Verzonken schat"
+            },
+            {
+              "name": "Verre kust"
+            }
           ]
         },
         {
           "name": "Voorspellers",
           "cards": [
-            {"name": "Kruidenverzamelaar"},
-            {"name": "Misdienaar"},
-            {"name": "Toverheks"},
-            {"name": "Sibille"}
+            {
+              "name": "Kruidenverzamelaar"
+            },
+            {
+              "name": "Misdienaar"
+            },
+            {
+              "name": "Toverheks"
+            },
+            {
+              "name": "Sibille"
+            }
           ]
         },
         {
           "name": "Forten",
           "cards": [
-            {"name": "Tent"},
-            {"name": "Garnizoen"},
-            {"name": "Heuvelfort"},
-            {"name": "Ridderkasteel"}
+            {
+              "name": "Tent"
+            },
+            {
+              "name": "Garnizoen"
+            },
+            {
+              "name": "Heuvelfort"
+            },
+            {
+              "name": "Ridderkasteel"
+            }
           ]
         },
         {
           "name": "Stedelingen",
           "cards": [
-            {"name": "Omroeper"},
-            {"name": "Kachelsmid"},
-            {"name": "Molenaar"},
-            {"name": "Ouderling"}
+            {
+              "name": "Omroeper"
+            },
+            {
+              "name": "Kachelsmid"
+            },
+            {
+              "name": "Molenaar"
+            },
+            {
+              "name": "Ouderling"
+            }
           ]
         }
       ],
       "allies": [
-        {"name": "Ambachtsgilde"},
-        {"name": "Astrologenorde"},
-        {"name": "Bankiersverbond"},
-        {"name": "Bende zakkenrollers"},
-        {"name": "Bergbewoners"},
-        {"name": "Bosbewoners"},
-        {"name": "Bouwmeestersgilde"},
-        {"name": "Eilandbewoners"},
-        {"name": "Groep nomaden"},
-        {"name": "Heksencirkel"},
-        {"name": "Holbewoners"},
-        {"name": "Hooglandherders"},
-        {"name": "Jagershut"},
-        {"name": "Kusthaven"},
-        {"name": "Marktsteden"},
-        {"name": "Metselaarsorde"},
-        {"name": "Schrijversgenootschap"},
-        {"name": "Stadstaat"},
-        {"name": "Timmermansgilde"},
-        {"name": "Uitvindersgezin"},
-        {"name": "Vreedzame sekte"},
-        {"name": "Winkeliersverbond"},
-        {"name": "Woestijngidsen"}
-      ]    
-    }, 
-		"Menagerie": {
+        {
+          "name": "Ambachtsgilde"
+        },
+        {
+          "name": "Astrologenorde"
+        },
+        {
+          "name": "Bankiersverbond"
+        },
+        {
+          "name": "Bende zakkenrollers"
+        },
+        {
+          "name": "Bergbewoners"
+        },
+        {
+          "name": "Bosbewoners"
+        },
+        {
+          "name": "Bouwmeestersgilde"
+        },
+        {
+          "name": "Eilandbewoners"
+        },
+        {
+          "name": "Groep nomaden"
+        },
+        {
+          "name": "Heksencirkel"
+        },
+        {
+          "name": "Holbewoners"
+        },
+        {
+          "name": "Hooglandherders"
+        },
+        {
+          "name": "Jagershut"
+        },
+        {
+          "name": "Kusthaven"
+        },
+        {
+          "name": "Marktsteden"
+        },
+        {
+          "name": "Metselaarsorde"
+        },
+        {
+          "name": "Schrijversgenootschap"
+        },
+        {
+          "name": "Stadstaat"
+        },
+        {
+          "name": "Timmermansgilde"
+        },
+        {
+          "name": "Uitvindersgezin"
+        },
+        {
+          "name": "Vreedzame sekte"
+        },
+        {
+          "name": "Winkeliersverbond"
+        },
+        {
+          "name": "Woestijngidsen"
+        }
+      ]
+    },
+    {
+	  "name": "menagerie",
       "cards": [
-        {"name": "Aak"},
-        {"name": "Besneeuwd dorp"},
-        {"name": "Cavalerie"},
-        {"name": "Dierenmarkt"},
-        {"name": "Dorpsweide"},
-        {"name": "Geitenhoeder"},
-        {"name": "Gewijde plek"},
-        {"name": "Heksenkring"},
-        {"name": "Herdershond"},
-        {"name": "Jachthuis"},
-        {"name": "Kamelenkaravaan"},
-        {"name": "Kardinaal"},
-        {"name": "Krijgsros"},
-        {"name": "Meesterbrein"},
-        {"name": "Omheind veld"},
-        {"name": "Oven"},
-        {"name": "Pension"},
-        {"name": "Poortwachter"},
-        {"name": "Premiejager"},
-        {"name": "Reserve"},
-        {"name": "Rijknecht"},
-        {"name": "Schroot"},
-        {"name": "Slede"},
-        {"name": "Stalhouderij"},
-        {"name": "Valkenier"},
-        {"name": "Verplaatsing"},
-        {"name": "Visser"},
-        {"name": "Voetreiziger"},
-        {"name": "Voorraden"},
-        {"name": "Zwarte kat"}
+        {
+          "name": "Aak"
+        },
+        {
+          "name": "Besneeuwd dorp"
+        },
+        {
+          "name": "Cavalerie"
+        },
+        {
+          "name": "Dierenmarkt"
+        },
+        {
+          "name": "Dorpsweide"
+        },
+        {
+          "name": "Geitenhoeder"
+        },
+        {
+          "name": "Gewijde plek"
+        },
+        {
+          "name": "Heksenkring"
+        },
+        {
+          "name": "Herdershond"
+        },
+        {
+          "name": "Jachthuis"
+        },
+        {
+          "name": "Kamelenkaravaan"
+        },
+        {
+          "name": "Kardinaal"
+        },
+        {
+          "name": "Krijgsros"
+        },
+        {
+          "name": "Meesterbrein"
+        },
+        {
+          "name": "Omheind veld"
+        },
+        {
+          "name": "Oven"
+        },
+        {
+          "name": "Pension"
+        },
+        {
+          "name": "Poortwachter"
+        },
+        {
+          "name": "Premiejager"
+        },
+        {
+          "name": "Reserve"
+        },
+        {
+          "name": "Rijknecht"
+        },
+        {
+          "name": "Schroot"
+        },
+        {
+          "name": "Slede"
+        },
+        {
+          "name": "Stalhouderij"
+        },
+        {
+          "name": "Valkenier"
+        },
+        {
+          "name": "Verplaatsing"
+        },
+        {
+          "name": "Visser"
+        },
+        {
+          "name": "Voetreiziger"
+        },
+        {
+          "name": "Voorraden"
+        },
+        {
+          "name": "Zwarte kat"
+        }
       ],
       "events": [
-        {"name": "Bevolken"},
-        {"name": "Bondgenootschap"},
-        {"name": "Commercie"},
-        {"name": "Enclave"},
-        {"name": "Gezwoeg"},
-        {"name": "Gokken"},
-        {"name": "Investeren"},
-        {"name": "Koopje"},
-        {"name": "Maaien"},
-        {"name": "Mars"},
-        {"name": "Nastreven"},
-        {"name": "Pluk de dag"},
-        {"name": "Rit"},
-        {"name": "Stormloop"},
-        {"name": "Transport"},
-        {"name": "Verbannen"},
-        {"name": "Verhoging"},
-        {"name": "Vertraging"},
-        {"name": "Vraag"},
-        {"name": "Wanhoop"}
+        {
+          "name": "Bevolken"
+        },
+        {
+          "name": "Bondgenootschap"
+        },
+        {
+          "name": "Commercie"
+        },
+        {
+          "name": "Enclave"
+        },
+        {
+          "name": "Gezwoeg"
+        },
+        {
+          "name": "Gokken"
+        },
+        {
+          "name": "Investeren"
+        },
+        {
+          "name": "Koopje"
+        },
+        {
+          "name": "Maaien"
+        },
+        {
+          "name": "Mars"
+        },
+        {
+          "name": "Nastreven"
+        },
+        {
+          "name": "Pluk de dag"
+        },
+        {
+          "name": "Rit"
+        },
+        {
+          "name": "Stormloop"
+        },
+        {
+          "name": "Transport"
+        },
+        {
+          "name": "Verbannen"
+        },
+        {
+          "name": "Verhoging"
+        },
+        {
+          "name": "Vertraging"
+        },
+        {
+          "name": "Vraag"
+        },
+        {
+          "name": "Wanhoop"
+        }
       ],
       "ways": [
-        {"name": "Spoor van de aap"},
-        {"name": "Spoor van de eekhoorn"},
-        {"name": "Spoor van de ezel"},
-        {"name": "Spoor van de geit"},
-        {"name": "Spoor van de kameel"},
-        {"name": "Spoor van de kameleon"},
-        {"name": "Spoor van de kikker"},
-        {"name": "Spoor van de mol"},
-        {"name": "Spoor van de muis"},
-        {"name": "Spoor van de os"},
-        {"name": "Spoor van de otter"},
-        {"name": "Spoor van de rat"},
-        {"name": "Spoor van de schildpad"},
-        {"name": "Spoor van de uil"},
-        {"name": "Spoor van de vlinder"},
-        {"name": "Spoor van de worm"},
-        {"name": "Spoor van de zeehond"},
-        {"name": "Spoor van het paard"},
-        {"name": "Spoor van het schaap"},
-        {"name": "Spoor van het varken"}
-      ]            
-    },
-      
-		"Welaart": {
-      "cards": [
-        {"name": "Aanmunten"},
-        {"name": "Arbeidersdorp"},
-        {"name": "Bank"},
-        {"name": "Bisschop"},
-        {"name": "Boekhouding"},
-        {"name": "Charlatan"},
-        {"name": "Domkoppen"},
-        {"name": "Gespuis"},
-        {"name": "Grote Markt"},
-        {"name": "Handelsroute"},
-        {"name": "Koningshof"},
-        {"name": "Koninklijk Zegel"},
-        {"name": "Lening"},
-        {"name": "Monument"},
-        {"name": "Schatkelder"},
-        {"name": "Smokkelwaar"},
-        {"name": "Spaargeld"},
-        {"name": "Stad"},
-        {"name": "Steengroeve"},
-        {"name": "Talisman"},
-        {"name": "Uitbreiden"},
-        {"name": "Uitkijktoren"},
-        {"name": "Venter"},
-        {"name": "Vervalsen"},
-        {"name": "Waagstuk"}
-      ]
-    }, 
-		"De Alchemisten": {
-      "cards": [
-        {"name": "Alchemist"},
-        {"name": "Apotheker"},
-        {"name": "Bezeten"},
-        {"name": "Golem"},
-        {"name": "Kruidenexpert"},
-        {"name": "Leerling"},
-        {"name": "Oude Bekende"},
-        {"name": "Steen der Wijzen"},
-        {"name": "Transformatie"},
-        {"name": "Universiteit"},
-        {"name": "Visioen"},
-        {"name": "Wijnberg"}
-      ]
-    }, 
-    "Overvloed": {
-      "cards": [
-        {"name": "Boerendorp"},
-        {"name": "Gehucht"},
-        {"name": "Hoorn des Overvloeds"},
-        {"name": "Jachtgezelschap"},
-        {"name": "Jonge Heks"},
-        {"name": "Kermisterrein"},
-        {"name": "Menagerie"},
-        {"name": "Nar"},
-        {"name": "Nieuwe Versie"},
-        {"name": "Oogst"},
-        {"name": "Paardenhandelaars"},
-        {"name": "Toernooi"},
-        {"name": "Waarzegster"}
+        {
+          "name": "Spoor van de aap"
+        },
+        {
+          "name": "Spoor van de eekhoorn"
+        },
+        {
+          "name": "Spoor van de ezel"
+        },
+        {
+          "name": "Spoor van de geit"
+        },
+        {
+          "name": "Spoor van de kameel"
+        },
+        {
+          "name": "Spoor van de kameleon"
+        },
+        {
+          "name": "Spoor van de kikker"
+        },
+        {
+          "name": "Spoor van de mol"
+        },
+        {
+          "name": "Spoor van de muis"
+        },
+        {
+          "name": "Spoor van de os"
+        },
+        {
+          "name": "Spoor van de otter"
+        },
+        {
+          "name": "Spoor van de rat"
+        },
+        {
+          "name": "Spoor van de schildpad"
+        },
+        {
+          "name": "Spoor van de uil"
+        },
+        {
+          "name": "Spoor van de vlinder"
+        },
+        {
+          "name": "Spoor van de worm"
+        },
+        {
+          "name": "Spoor van de zeehond"
+        },
+        {
+          "name": "Spoor van het paard"
+        },
+        {
+          "name": "Spoor van het schaap"
+        },
+        {
+          "name": "Spoor van het varken"
+        }
       ]
     },
-		"Keizerrijken": {
+    {
+	  "name": "prosperity",
       "cards": [
-        {"name": "Archief"},
-        {"name": "Boerenmarkt"},
-        {"name": "Despoot"},
-        {"name": "Forum"},
-        {"name": "Geluksbrenger"},
-        {"name": "Ingenieur"},
-        {"name": "Kapitaal"},
-        {"name": "Kasteelhovenier"},
-        {"name": "Koninklijke smid"},
-        {"name": "Kroon"},
-        {"name": "Legioensoldaat"},
-        {"name": "Offer"},
-        {"name": "Stadswijk"},
-        {"name": "Strijdwagenrace"},
-        {"name": "Tempel"},
-        {"name": "Tovenares"},
-        {"name": "Villa"},
-        {"name": "Wilde jacht"}
+        {
+          "name": "Aanmunten"
+        },
+        {
+          "name": "Arbeidersdorp"
+        },
+        {
+          "name": "Bank"
+        },
+        {
+          "name": "Bisschop"
+        },
+        {
+          "name": "Boekhouding"
+        },
+        {
+          "name": "Charlatan"
+        },
+        {
+          "name": "Domkoppen"
+        },
+        {
+          "name": "Gespuis"
+        },
+        {
+          "name": "Grote Markt"
+        },
+        {
+          "name": "Handelsroute"
+        },
+        {
+          "name": "Koningshof"
+        },
+        {
+          "name": "Koninklijk Zegel"
+        },
+        {
+          "name": "Lening"
+        },
+        {
+          "name": "Monument"
+        },
+        {
+          "name": "Schatkelder"
+        },
+        {
+          "name": "Smokkelwaar"
+        },
+        {
+          "name": "Spaargeld"
+        },
+        {
+          "name": "Stad"
+        },
+        {
+          "name": "Steengroeve"
+        },
+        {
+          "name": "Talisman"
+        },
+        {
+          "name": "Uitbreiden"
+        },
+        {
+          "name": "Uitkijktoren"
+        },
+        {
+          "name": "Venter"
+        },
+        {
+          "name": "Vervalsen"
+        },
+        {
+          "name": "Waagstuk"
+        }
+      ]
+    },
+    {
+	  "name": "alchemy",
+      "cards": [
+        {
+          "name": "Alchemist"
+        },
+        {
+          "name": "Apotheker"
+        },
+        {
+          "name": "Bezeten"
+        },
+        {
+          "name": "Golem"
+        },
+        {
+          "name": "Kruidenexpert"
+        },
+        {
+          "name": "Leerling"
+        },
+        {
+          "name": "Oude Bekende"
+        },
+        {
+          "name": "Steen der Wijzen"
+        },
+        {
+          "name": "Transformatie"
+        },
+        {
+          "name": "Universiteit"
+        },
+        {
+          "name": "Visioen"
+        },
+        {
+          "name": "Wijnberg"
+        }
+      ]
+    },
+    {
+	  "name": "cornucopia",
+      "cards": [
+        {
+          "name": "Boerendorp"
+        },
+        {
+          "name": "Gehucht"
+        },
+        {
+          "name": "Hoorn des Overvloeds"
+        },
+        {
+          "name": "Jachtgezelschap"
+        },
+        {
+          "name": "Jonge Heks"
+        },
+        {
+          "name": "Kermisterrein"
+        },
+        {
+          "name": "Menagerie"
+        },
+        {
+          "name": "Nar"
+        },
+        {
+          "name": "Nieuwe Versie"
+        },
+        {
+          "name": "Oogst"
+        },
+        {
+          "name": "Paardenhandelaars"
+        },
+        {
+          "name": "Toernooi"
+        },
+        {
+          "name": "Waarzegster"
+        }
+      ]
+    },
+    {
+	  "name": "empires",
+      "cards": [
+        {
+          "name": "Archief"
+        },
+        {
+          "name": "Boerenmarkt"
+        },
+        {
+          "name": "Despoot"
+        },
+        {
+          "name": "Forum"
+        },
+        {
+          "name": "Geluksbrenger"
+        },
+        {
+          "name": "Ingenieur"
+        },
+        {
+          "name": "Kapitaal"
+        },
+        {
+          "name": "Kasteelhovenier"
+        },
+        {
+          "name": "Koninklijke smid"
+        },
+        {
+          "name": "Kroon"
+        },
+        {
+          "name": "Legioensoldaat"
+        },
+        {
+          "name": "Offer"
+        },
+        {
+          "name": "Stadswijk"
+        },
+        {
+          "name": "Strijdwagenrace"
+        },
+        {
+          "name": "Tempel"
+        },
+        {
+          "name": "Tovenares"
+        },
+        {
+          "name": "Villa"
+        },
+        {
+          "name": "Wilde jacht"
+        }
       ],
       "combinedPiles": [
         {
           "name": "Gladiator/Fortuin",
           "cards": [
-            {"name": "Gladiator"},
-            {"name": "Fortuin"}
+            {
+              "name": "Gladiator"
+            },
+            {
+              "name": "Fortuin"
+            }
           ]
         },
         {
           "name": "Katapult/Rotsblokken",
           "cards": [
-            {"name": "Katapult"},
-            {"name": "Rotsblokken"}
+            {
+              "name": "Katapult"
+            },
+            {
+              "name": "Rotsblokken"
+            }
           ]
         },
         {
           "name": "Kampement/Plunderen",
           "cards": [
-            {"name": "Kampement"},
-            {"name": "Plunderen"}
+            {
+              "name": "Kampement"
+            },
+            {
+              "name": "Plunderen"
+            }
           ]
         },
         {
           "name": "Patriciër/Emporium",
           "cards": [
-            {"name": "Patriciër"},
-            {"name": "Emporium"}
+            {
+              "name": "Patriciër"
+            },
+            {
+              "name": "Emporium"
+            }
           ]
         },
         {
           "name": "Kolonisten/Levendig dorp",
           "cards": [
-            {"name": "Kolonisten"},
-            {"name": "Levendig dorp"}
+            {
+              "name": "Kolonisten"
+            },
+            {
+              "name": "Levendig dorp"
+            }
           ]
         },
         {
           "name": "Kastelen",
           "cards": [
-            {"name": "Bescheiden kasteel"},
-            {"name": "Vervallen kasteel"},
-            {"name": "Klein kasteel"},
-            {"name": "Spookkasteel kasteel"},
-            {"name": "Weelderig kasteel"},
-            {"name": "Florerend kasteel"},
-            {"name": "Groot kasteel"},
-            {"name": "Koningskasteel"}
+            {
+              "name": "Bescheiden kasteel"
+            },
+            {
+              "name": "Vervallen kasteel"
+            },
+            {
+              "name": "Klein kasteel"
+            },
+            {
+              "name": "Spookkasteel kasteel"
+            },
+            {
+              "name": "Weelderig kasteel"
+            },
+            {
+              "name": "Florerend kasteel"
+            },
+            {
+              "name": "Groot kasteel"
+            },
+            {
+              "name": "Koningskasteel"
+            }
           ]
         }
       ],
       "landmarks": [
-        {"name": "Paleis"},
-        {"name": "Bandietenfort"},
-        {"name": "Slagveld"},
-        {"name": "Aquaduct"},
-        {"name": "Arena"},
-        {"name": "Toren"},
-        {"name": "Wolvenhol"},
-        {"name": "Hoofdtoren"},
-        {"name": "Tombe"},
-        {"name": "Fontein"},
-        {"name": "Zuilengalerij"},
-        {"name": "Obelisk"},
-        {"name": "Geschonden altaar"},
-        {"name": "Baden"},
-        {"name": "Muur"},
-        {"name": "Boomgaard"},
-        {"name": "Triomfboog"},
-        {"name": "Bergpas"},
-        {"name": "Basiliek"},
-        {"name": "Labyrint"},
-        {"name": "Museum"}
+        {
+          "name": "Paleis"
+        },
+        {
+          "name": "Bandietenfort"
+        },
+        {
+          "name": "Slagveld"
+        },
+        {
+          "name": "Aquaduct"
+        },
+        {
+          "name": "Arena"
+        },
+        {
+          "name": "Toren"
+        },
+        {
+          "name": "Wolvenhol"
+        },
+        {
+          "name": "Hoofdtoren"
+        },
+        {
+          "name": "Tombe"
+        },
+        {
+          "name": "Fontein"
+        },
+        {
+          "name": "Zuilengalerij"
+        },
+        {
+          "name": "Obelisk"
+        },
+        {
+          "name": "Geschonden altaar"
+        },
+        {
+          "name": "Baden"
+        },
+        {
+          "name": "Muur"
+        },
+        {
+          "name": "Boomgaard"
+        },
+        {
+          "name": "Triomfboog"
+        },
+        {
+          "name": "Bergpas"
+        },
+        {
+          "name": "Basiliek"
+        },
+        {
+          "name": "Labyrint"
+        },
+        {
+          "name": "Museum"
+        }
       ],
       "events": [
-        {"name": "Zout der aarde"},
-        {"name": "Delven"},
-        {"name": "Ritueel"},
-        {"name": "Banket"},
-        {"name": "Donatie"},
-        {"name": "Verovering"},
-        {"name": "Bruiloft"},
-        {"name": "Promotie"},
-        {"name": "Belasting"},
-        {"name": "Overname"},
-        {"name": "Triomf"},
-        {"name": "Meevaller"},
-        {"name": "Overheersing"}
+        {
+          "name": "Zout der aarde"
+        },
+        {
+          "name": "Delven"
+        },
+        {
+          "name": "Ritueel"
+        },
+        {
+          "name": "Banket"
+        },
+        {
+          "name": "Donatie"
+        },
+        {
+          "name": "Verovering"
+        },
+        {
+          "name": "Bruiloft"
+        },
+        {
+          "name": "Promotie"
+        },
+        {
+          "name": "Belasting"
+        },
+        {
+          "name": "Overname"
+        },
+        {
+          "name": "Triomf"
+        },
+        {
+          "name": "Meevaller"
+        },
+        {
+          "name": "Overheersing"
+        }
       ]
     }
-	}
+  ]
 }
