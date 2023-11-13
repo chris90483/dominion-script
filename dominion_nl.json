@@ -11,7 +11,7 @@
   },
   "boxes": [
     {
-	  "name": "basegame (2nd edition)",
+      "name": "basegame (2nd edition)",
       "cards": [
         {
           "name": "Ambachtsman"
@@ -91,7 +91,7 @@
       ]
     },
     {
-	  "name": "seaside (2nd edition)",
+      "name": "seaside (2nd edition)",
       "cards": [
         {
           "name": "Aap"
@@ -177,7 +177,7 @@
       ]
     },
     {
-	  "name": "allies",
+      "name": "allies",
       "cards": [
         {
           "name": "Afgezant"
@@ -432,7 +432,7 @@
       ]
     },
     {
-	  "name": "menagerie",
+      "name": "menagerie",
       "cards": [
         {
           "name": "Aak"
@@ -651,7 +651,7 @@
       ]
     },
     {
-	  "name": "prosperity",
+      "name": "prosperity",
       "cards": [
         {
           "name": "Aanmunten"
@@ -731,7 +731,7 @@
       ]
     },
     {
-	  "name": "alchemy",
+      "name": "alchemy",
       "cards": [
         {
           "name": "Alchemist"
@@ -772,7 +772,7 @@
       ]
     },
     {
-	  "name": "cornucopia",
+      "name": "cornucopia",
       "cards": [
         {
           "name": "Boerendorp"
@@ -816,7 +816,7 @@
       ]
     },
     {
-	  "name": "empires",
+      "name": "empires",
       "cards": [
         {
           "name": "Archief"
