@@ -14,262 +14,347 @@
       "name": "basegame (2nd edition)",
       "cards": [
         {
-          "name": "Ambachtsman"
+            "name": "Ambachtsman",
+            "type": "actie"
         },
         {
-          "name": "Bandiet"
+            "name": "Bandiet",
+            "type": ["actie", "aanval"]
         },
         {
-          "name": "Bureaucraat"
+            "name": "Bureaucraat",
+            "type": ["actie", "aanval"]
         },
         {
-          "name": "Kelder"
+            "name": "Kelder",
+            "type": "actie"
         },
         {
-          "name": "Kapel"
+            "name": "Kapel",
+            "type": "actie"
         },
         {
-          "name": "Raadszaal"
+            "name": "Raadszaal",
+            "type": "actie"
         },
         {
-          "name": "Festival"
+            "name": "Festival",
+            "type": "actie"
         },
         {
-          "name": "Voorbode"
+            "name": "Voorbode",
+            "type": "actie"
         },
         {
-          "name": "Laboratorium"
+            "name": "Laboratorium",
+            "type": "actie"
         },
         {
-          "name": "Bibliotheek"
+            "name": "Bibliotheek",
+            "type": "actie"
         },
         {
-          "name": "Markt"
+            "name": "Markt",
+            "type": "actie"
         },
         {
-          "name": "Koopman"
+            "name": "Koopman",
+            "type": "actie"
         },
         {
-          "name": "Militie"
+            "name": "Militie",
+            "type": ["actie", "aanval"]
         },
         {
-          "name": "Mijn"
+            "name": "Mijn",
+            "type": "actie"
         },
         {
-          "name": "Slotgracht"
+            "name": "Slotgracht",
+            "type": ["actie", "reactie"]
         },
         {
-          "name": "Geldschieter"
+            "name": "Geldschieter",
+            "type": "actie"
         },
         {
-          "name": "Wilddief"
+            "name": "Wilddief",
+            "type": "actie"
         },
         {
-          "name": "Verbouwing"
+            "name": "Verbouwing",
+            "type": "actie"
         },
         {
-          "name": "Cipier"
+            "name": "Cipier",
+            "type": "actie"
         },
         {
-          "name": "Smidse"
+            "name": "Smidse",
+            "type": "actie"
         },
         {
-          "name": "Troonzaal"
+            "name": "Troonzaal",
+            "type": "actie"
         },
         {
-          "name": "Vazal"
+            "name": "Vazal",
+            "type": "actie"
         },
         {
-          "name": "Dorp"
+            "name": "Dorp",
+            "type": "actie"
         },
         {
-          "name": "Heks"
+            "name": "Heks",
+            "type": ["actie", "aanval"]
         },
         {
-          "name": "Werkplaats"
+            "name": "Werkplaats",
+            "type": "actie"
+        },
+        {
+            "name": "Tuin",
+            "type": "Overwinnnig"
         }
-      ]
+    ]
     },
     {
       "name": "seaside (2nd edition)",
       "cards": [
         {
-          "name": "Aap"
+            "name": "Aap",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Afvalverwerker"
+            "name": "Afvalverwerker",
+            "type": "actie"
         },
         {
-          "name": "Bazaar"
+            "name": "Bazaar",
+            "type": "actie"
         },
         {
-          "name": "Beurzensnijder"
+            "name": "Beurzensnijder",
+            "type": ["actie", "aanval"]
         },
         {
-          "name": "Blokkade"
+            "name": "Blokkade",
+            "type": ["actie", "duurzaam", "aanval"]
         },
         {
-          "name": "Getijdenpoelen"
+            "name": "Getijdenpoelen",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Handelsschip"
+            "name": "Handelsschip",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Haven"
+            "name": "Haven",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Inheems Dorp"
+            "name": "Inheems Dorp",
+            "type": "actie"
         },
         {
-          "name": "Karavaan"
+            "name": "Karavaan",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Matroos"
+            "name": "Matroos",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Pakhuis"
+            "name": "Pakhuis",
+            "type": "actie"
         },
         {
-          "name": "Piraat"
+            "name": "Piraat",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Schatkaart"
+            "name": "Schatkaart",
+            "type": "actie"
         },
         {
-          "name": "Schatkamer"
+            "name": "Schatkamer",
+            "type": "actie"
         },
         {
-          "name": "Scheepswerf"
+            "name": "Scheepswerf",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Sextant"
+            "name": "Sextant",
+            "type": ["geld", "duurzaam"]
         },
         {
-          "name": "Smokkelaar"
+            "name": "Smokkelaar",
+            "type": "actie"
         },
         {
-          "name": "Strateeg"
+            "name": "Strateeg",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Uitkijk"
+            "name": "Uitkijk",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Vissersdorp"
+            "name": "Vissersdorp",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Voorpost"
+            "name": "Voorpost",
+            "type": "actie"
         },
         {
-          "name": "Vuurtoren"
+            "name": "Vuurtoren",
+            "type": "actie"
         },
         {
-          "name": "Zeekaart"
+            "name": "Zeekaart",
+            "type": "actie"
         },
         {
-          "name": "Zeekol"
+            "name": "Zeekol",
+            "type": ["actie", "duurzaam", "aanval"]
         },
         {
-          "name": "Zeerover"
+            "name": "Zeerover",
+            "type": ["actie", "duurzaam", "aanval"]
         },
         {
-          "name": "Eiland"
+            "name": "Eiland",
+            "type": ["actie", "overwinning"]
         }
-      ]
+    ]
     },
     {
       "name": "allies",
       "cards": [
         {
-          "name": "Afgezant"
+            "name": "Afgezant",
+            "type": ["actie", "liason"]
         },
         {
-          "name": "Barbaar"
+            "name": "Barbaar",
+            "type": ["actie", "aanval"]
         },
         {
-          "name": "Bijwerken"
+            "name": "Bijwerken",
+            "type": "actie"
         },
         {
-          "name": "Contract"
+            "name": "Contract",
+            "type": ["geld", "duurzaam", "liason"]
         },
         {
-          "name": "Gildenmeester"
+            "name": "Gildenmeester",
+            "type": ["actie", "liason"]
         },
         {
-          "name": "Handelaarskamp"
+            "name": "Handelaarskamp",
+            "type": "actie"
         },
         {
-          "name": "Hielenlikker"
+            "name": "Hielenlikker",
+            "type": ["actie", "liason"]
         },
         {
-          "name": "Hoofdstad"
+            "name": "Hoofdstad",
+            "type": "actie"
         },
         {
-          "name": "Houtwerker"
+            "name": "Houtwerker",
+            "type": "actie"
         },
         {
-          "name": "Importeur"
+            "name": "Importeur",
+            "type": ["actie", "duurzaam", "liason"]
         },
         {
-          "name": "Jager"
+            "name": "Jager",
+            "type": "actie"
         },
         {
-          "name": "Kerstbal"
+            "name": "Kerstbal",
+            "type": ["geld", "liason"]
         },
         {
-          "name": "Koninklijk galeischip"
+            "name": "Koninklijk galeischip",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Kunstmuseum"
+            "name": "Kunstmuseum",
+            "type": "actie"
         },
         {
-          "name": "Markies"
+            "name": "Markies",
+            "type": "actie"
         },
         {
-          "name": "Nederzetting"
+            "name": "Nederzetting",
+            "type": "actie"
         },
         {
-          "name": "Ondergeschikte"
+            "name": "Ondergeschikte",
+            "type": ["actie", "liason"]
         },
         {
-          "name": "Renbode"
+            "name": "Renbode",
+            "type": "actie"
         },
         {
-          "name": "Ruilen"
+            "name": "Ruilen",
+            "type": "actie"
         },
         {
-          "name": "Schildwacht"
+            "name": "Schildwacht",
+            "type": "actie"
         },
         {
-          "name": "Specialist"
+            "name": "Specialist",
+            "type": "actie"
         },
         {
-          "name": "Struikrover"
+            "name": "Struikrover",
+            "type": ["actie", "duurzaam", "aanval"]
         },
         {
-          "name": "Tirailleur"
+            "name": "Tirailleur",
+            "type": ["actie", "aanval"]
         },
         {
-          "name": "Waard"
+            "name": "Waard",
+            "type": "actie"
         },
         {
-          "name": "Zaakwaarnemer"
+            "name": "Zaakwaarnemer",
+            "type": ["actie", "liason"]
         }
-      ],
+    ],
       "combinedPiles": [
         {
           "name": "Conflicten",
           "cards": [
             {
-              "name": "Strijdplan"
+              "name": "Strijdplan",
+              "type": "actie"
             },
             {
-              "name": "Boogschutter"
+              "name": "Boogschutter",
+              "type": ["actie", "aanval"]
             },
             {
-              "name": "Krijgsheer"
+              "name": "Krijgsheer",
+              "type": ["actie", "duurzaam", "aanval"]
             },
             {
-              "name": "Gebied"
+              "name": "Gebied",
+              "type": "Overwinnnig"
             }
           ]
         },
@@ -277,16 +362,20 @@
           "name": "Tovenaars",
           "cards": [
             {
-              "name": "Student"
+              "name": "Student",
+              "type": "actie"
             },
             {
-              "name": "Illusionist"
+              "name": "Illusionist",
+              "type": ["actie", "duurzaam"]
             },
             {
-              "name": "Heksenmeester"
+              "name": "Heksenmeester",
+              "type": ["actie", "aanval"]
             },
             {
-              "name": "Zielenzuiger"
+              "name": "Zielenzuiger",
+              "type": "actie"
             }
           ]
         },
@@ -294,16 +383,20 @@
           "name": "Zwerftochten",
           "cards": [
             {
-              "name": "Oude landkaart"
+              "name": "Oude landkaart",
+              "type": "actie"
             },
             {
-              "name": "Reis"
+              "name": "Reis",
+              "type": ["actie", "duurzaam"]
             },
             {
-              "name": "Verzonken schat"
+              "name": "Verzonken schat",
+              "type": "geld"
             },
             {
-              "name": "Verre kust"
+              "name": "Verre kust",
+              "type": ["actie", "overwinning"]
             }
           ]
         },
@@ -311,16 +404,20 @@
           "name": "Voorspellers",
           "cards": [
             {
-              "name": "Kruidenverzamelaar"
+              "name": "Kruidenverzamelaar",
+              "type": "actie"
             },
             {
-              "name": "Misdienaar"
+              "name": "Misdienaar",
+              "type": "actie"
             },
             {
-              "name": "Toverheks"
+              "name": "Toverheks",
+              "type": ["actie", "aanval"]
             },
             {
-              "name": "Sibille"
+              "name": "Sibille",
+              "type": "actie"
             }
           ]
         },
@@ -328,16 +425,20 @@
           "name": "Forten",
           "cards": [
             {
-              "name": "Tent"
+              "name": "Tent",
+              "type": "actie"
             },
             {
-              "name": "Garnizoen"
+              "name": "Garnizoen",
+              "type": ["actie", "duurzaam"]
             },
             {
-              "name": "Heuvelfort"
+              "name": "Heuvelfort",
+              "type": "actie"
             },
             {
-              "name": "Ridderkasteel"
+              "name": "Ridderkasteel",
+              "type": ["actie", "overwinning","duurzaam"]
             }
           ]
         },
@@ -345,16 +446,20 @@
           "name": "Stedelingen",
           "cards": [
             {
-              "name": "Omroeper"
+              "name": "Omroeper",
+              "type": "actie"
             },
             {
-              "name": "Kachelsmid"
+              "name": "Kachelsmid",
+              "type": "actie"
             },
             {
-              "name": "Molenaar"
+              "name": "Molenaar",
+              "type": "actie"
             },
             {
-              "name": "Ouderling"
+              "name": "Ouderling",
+              "type": "actie"
             }
           ]
         }
@@ -435,96 +540,126 @@
       "name": "menagerie",
       "cards": [
         {
-          "name": "Aak"
+            "name": "Aak",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Besneeuwd dorp"
+            "name": "Besneeuwd dorp",
+            "type": "actie"
         },
         {
-          "name": "Cavalerie"
+            "name": "Cavalerie",
+            "type": "actie"
         },
         {
-          "name": "Dierenmarkt"
+            "name": "Dierenmarkt",
+            "type": "actie"
         },
         {
-          "name": "Dorpsweide"
+            "name": "Dorpsweide",
+            "type": ["actie", "duurzaam", "reactie"]
         },
         {
-          "name": "Geitenhoeder"
+            "name": "Geitenhoeder",
+            "type": "actie"
         },
         {
-          "name": "Gewijde plek"
+            "name": "Gewijde plek",
+            "type": "actie"
         },
         {
-          "name": "Heksenkring"
+            "name": "Heksenkring",
+            "type": ["actie", "aanval"]
         },
         {
-          "name": "Herdershond"
+            "name": "Herdershond",
+            "type": ["actie", "reactie"]
         },
         {
-          "name": "Jachthuis"
+            "name": "Jachthuis",
+            "type": "actie"
         },
         {
-          "name": "Kamelenkaravaan"
+            "name": "Kamelenkaravaan",
+            "type": "geld"
         },
         {
-          "name": "Kardinaal"
+            "name": "Kardinaal",
+            "type": ["actie", "aanval"]
         },
         {
-          "name": "Krijgsros"
+            "name": "Krijgsros",
+            "type": "actie"
         },
         {
-          "name": "Meesterbrein"
+            "name": "Meesterbrein",
+            "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Omheind veld"
+            "name": "Omheind veld",
+            "type": "actie"
         },
         {
-          "name": "Oven"
+            "name": "Oven",
+            "type": "actie"
         },
         {
-          "name": "Pension"
+            "name": "Pension",
+            "type": "actie"
         },
         {
-          "name": "Poortwachter"
+            "name": "Poortwachter",
+            "type": ["actie", "duurzaam", "aanval"]
         },
         {
-          "name": "Premiejager"
+            "name": "Premiejager",
+            "type": "actie"
         },
         {
-          "name": "Reserve"
+            "name": "Reserve",
+            "type": "actie"
         },
         {
-          "name": "Rijknecht"
+            "name": "Rijknecht",
+            "type": "actie"
         },
         {
-          "name": "Schroot"
+            "name": "Schroot",
+            "type": "actie"
         },
         {
-          "name": "Slede"
+            "name": "Slede",
+            "type": ["actie", "reactie"]
         },
         {
-          "name": "Stalhouderij"
+            "name": "Stalhouderij",
+            "type": "actie"
         },
         {
-          "name": "Valkenier"
+            "name": "Valkenier",
+            "type": ["actie", "reactie"]
         },
         {
-          "name": "Verplaatsing"
+            "name": "Verplaatsing",
+            "type": "actie"
         },
         {
-          "name": "Visser"
+            "name": "Visser",
+            "type": "actie"
         },
         {
-          "name": "Voetreiziger"
+            "name": "Voetreiziger",
+            "type": "actie"
         },
         {
-          "name": "Voorraden"
+            "name": "Voorraden",
+            "type": "geld"
         },
         {
-          "name": "Zwarte kat"
+            "name": "Zwarte kat",
+            "type": ["actie","aanval", "reactie"]
         }
-      ],
+    ],
       "events": [
         {
           "name": "Bevolken"
@@ -654,120 +789,157 @@
       "name": "prosperity",
       "cards": [
         {
-          "name": "Aanmunten"
+            "name": "Aanmunten",
+            "type": "actie"
         },
         {
-          "name": "Arbeidersdorp"
+            "name": "Arbeidersdorp",
+            "type": "actie"
         },
         {
-          "name": "Bank"
+            "name": "Bank",
+            "type": "geld"
         },
         {
-          "name": "Bisschop"
+            "name": "Bisschop",
+            "type": "actie"
         },
         {
-          "name": "Boekhouding"
+            "name": "Boekhouding",
+            "type": "actie"
         },
         {
-          "name": "Charlatan"
+            "name": "Charlatan",
+            "type": ["actie", "aanval"]
         },
         {
-          "name": "Domkoppen"
+            "name": "Domkoppen",
+            "type": ["actie", "aanval"]
         },
         {
-          "name": "Gespuis"
+            "name": "Gespuis",
+            "type": ["actie", "aanval"]
         },
         {
-          "name": "Grote Markt"
+            "name": "Grote Markt",
+            "type": "actie"
         },
         {
-          "name": "Handelsroute"
+            "name": "Handelsroute",
+            "type": "actie"
         },
         {
-          "name": "Koningshof"
+            "name": "Koningshof",
+            "type": "actie"
         },
         {
-          "name": "Koninklijk Zegel"
+            "name": "Koninklijk Zegel",
+            "type": "geld"
         },
         {
-          "name": "Lening"
+            "name": "Lening",
+            "type": "geld"
         },
         {
-          "name": "Monument"
+            "name": "Monument",
+            "type": "actie"
         },
         {
-          "name": "Schatkelder"
+            "name": "Schatkelder",
+            "type": "actie"
         },
         {
-          "name": "Smokkelwaar"
+            "name": "Smokkelwaar",
+            "type": "geld"
         },
         {
-          "name": "Spaargeld"
+            "name": "Spaargeld",
+            "type": "geld"
         },
         {
-          "name": "Stad"
+            "name": "Stad",
+            "type": "actie"
         },
         {
-          "name": "Steengroeve"
+            "name": "Steengroeve",
+            "type": "geld"
         },
         {
-          "name": "Talisman"
+            "name": "Talisman",
+            "type": "geld"
         },
         {
-          "name": "Uitbreiden"
+            "name": "Uitbreiden",
+            "type": "actie"
         },
         {
-          "name": "Uitkijktoren"
+            "name": "Uitkijktoren",
+            "type": ["actie", "reactie"]
         },
         {
-          "name": "Venter"
+            "name": "Venter",
+            "type": "actie"
         },
         {
-          "name": "Vervalsen"
+            "name": "Vervalsen",
+            "type": "actie"
         },
         {
-          "name": "Waagstuk"
+            "name": "Waagstuk",
+            "type": "geld"
         }
-      ]
+    ]
     },
     {
       "name": "alchemy",
       "cards": [
         {
-          "name": "Alchemist"
+          "name": "Alchemist",
+          "type": "actie"
         },
         {
-          "name": "Apotheker"
+          "name": "Apotheker",
+          "type": "actie"
         },
         {
-          "name": "Bezeten"
+          "name": "Bezeten",
+          "type": ["actie", "aanval"]
         },
         {
-          "name": "Golem"
+          "name": "Golem",
+          "type": "actie"
         },
         {
-          "name": "Kruidenexpert"
+          "name": "Kruidenexpert",
+          "type": "actie"
         },
         {
-          "name": "Leerling"
+          "name": "Leerling",
+          "type": "actie"
         },
         {
-          "name": "Oude Bekende"
+          "name": "Oude Bekende",
+          "type": ["actie", "aanval"]
         },
         {
-          "name": "Steen der Wijzen"
+          "name": "Steen der Wijzen",
+          "type": "geld"
         },
         {
-          "name": "Transformatie"
+          "name": "Transformatie",
+          "type": "actie"
         },
         {
-          "name": "Universiteit"
+          "name": "Universiteit",
+          "type": "actie"
         },
         {
-          "name": "Visioen"
+          "name": "Visioen",
+          "type": ["actie", "aanval"]
         },
         {
-          "name": "Wijnberg"
+          "name": "Wijnberg",
+          "type": "Overwinnnig"
         }
       ]
     },
@@ -775,43 +947,56 @@
       "name": "cornucopia",
       "cards": [
         {
-          "name": "Boerendorp"
+          "name": "Boerendorp",
+          "type": "actie"
         },
         {
-          "name": "Gehucht"
+          "name": "Gehucht",
+          "type": "actie"
         },
         {
-          "name": "Hoorn des Overvloeds"
+          "name": "Hoorn des Overvloeds",
+          "type": "geld"
         },
         {
-          "name": "Jachtgezelschap"
+          "name": "Jachtgezelschap",
+          "type": "actie"
         },
         {
-          "name": "Jonge Heks"
+          "name": "Jonge Heks",
+          "type": ["actie", "aanval"]
         },
         {
-          "name": "Kermisterrein"
+          "name": "Kermisterrein",
+          "type": "Overwinnnig"
         },
         {
-          "name": "Menagerie"
+          "name": "Menagerie",
+          "type": "actie"
         },
         {
-          "name": "Nar"
+          "name": "Nar",
+          "type": ["actie", "aanval"]
         },
         {
-          "name": "Nieuwe Versie"
+          "name": "Nieuwe Versie",
+          "type": "actie"
         },
         {
-          "name": "Oogst"
+          "name": "Oogst",
+          "type": "actie"
         },
         {
-          "name": "Paardenhandelaars"
+          "name": "Paardenhandelaars",
+          "type": ["actie", "reactie"]
         },
         {
-          "name": "Toernooi"
+          "name": "Toernooi",
+          "type": "actie"
         },
         {
-          "name": "Waarzegster"
+          "name": "Waarzegster",
+          "type": ["actie", "aanval"]
         }
       ]
     },
@@ -819,58 +1004,76 @@
       "name": "empires",
       "cards": [
         {
-          "name": "Archief"
+          "name": "Archief",
+          "type": ["actie", "duurzaam"]
         },
         {
-          "name": "Boerenmarkt"
+          "name": "Boerenmarkt",
+          "type": ["actie", "verzamel"]
         },
         {
-          "name": "Despoot"
+          "name": "Despoot",
+          "type": ["actie", "bevel"]
         },
         {
-          "name": "Forum"
+          "name": "Forum",
+          "type": "actie"
         },
         {
-          "name": "Geluksbrenger"
+          "name": "Geluksbrenger",
+          "type": "geld"
         },
         {
-          "name": "Ingenieur"
+          "name": "Ingenieur",
+          "type": "actie"
         },
         {
-          "name": "Kapitaal"
+          "name": "Kapitaal",
+          "type": "geld"
         },
         {
-          "name": "Kasteelhovenier"
+          "name": "Kasteelhovenier",
+          "type": "actie"
         },
         {
-          "name": "Koninklijke smid"
+          "name": "Koninklijke smid",
+          "type": "actie"
         },
         {
-          "name": "Kroon"
+          "name": "Kroon",
+          "type": ["actie", "geld"]
         },
         {
-          "name": "Legioensoldaat"
+          "name": "Legioensoldaat",
+          "type": ["actie", "aanval"]
         },
         {
-          "name": "Offer"
+          "name": "Offer",
+          "type": "actie"
         },
         {
-          "name": "Stadswijk"
+          "name": "Stadswijk",
+          "type": "actie"
         },
         {
-          "name": "Strijdwagenrace"
+          "name": "Strijdwagenrace",
+          "type": "actie"
         },
         {
-          "name": "Tempel"
+          "name": "Tempel",
+          "type": "actie"
         },
         {
-          "name": "Tovenares"
+          "name": "Tovenares",
+          "type": ["actie", "aanval", "duurzaam"]
         },
         {
-          "name": "Villa"
+          "name": "Villa",
+          "type": "actie"
         },
         {
-          "name": "Wilde jacht"
+          "name": "Wilde jacht",
+          "type": ["actie", "verzamel"]
         }
       ],
       "combinedPiles": [
@@ -878,10 +1081,12 @@
           "name": "Gladiator/Fortuin",
           "cards": [
             {
-              "name": "Gladiator"
+              "name": "Gladiator",
+              "type": "actie"
             },
             {
-              "name": "Fortuin"
+              "name": "Fortuin",
+              "type": "geld"
             }
           ]
         },
@@ -889,10 +1094,12 @@
           "name": "Katapult/Rotsblokken",
           "cards": [
             {
-              "name": "Katapult"
+              "name": "Katapult",
+              "type": ["actie", "aanval"]
             },
             {
-              "name": "Rotsblokken"
+              "name": "Rotsblokken",
+              "type": "geld"
             }
           ]
         },
@@ -900,10 +1107,12 @@
           "name": "Kampement/Plunderen",
           "cards": [
             {
-              "name": "Kampement"
+              "name": "Kampement",
+              "type": "actie"
             },
             {
-              "name": "Plunderen"
+              "name": "Plunderen",
+              "type": "geld"
             }
           ]
         },
@@ -911,10 +1120,12 @@
           "name": "Patriciër/Emporium",
           "cards": [
             {
-              "name": "Patriciër"
+              "name": "Patriciër",
+              "type": "actie"
             },
             {
-              "name": "Emporium"
+              "name": "Emporium",
+              "type": "actie"
             }
           ]
         },
@@ -922,10 +1133,12 @@
           "name": "Kolonisten/Levendig dorp",
           "cards": [
             {
-              "name": "Kolonisten"
+              "name": "Kolonisten",
+              "type": "actie"
             },
             {
-              "name": "Levendig dorp"
+              "name": "Levendig dorp",
+              "type": "actie"
             }
           ]
         },
@@ -933,28 +1146,36 @@
           "name": "Kastelen",
           "cards": [
             {
-              "name": "Bescheiden kasteel"
+              "name": "Bescheiden kasteel",
+              "type": ["geld", "overwinning"]
             },
             {
-              "name": "Vervallen kasteel"
+              "name": "Vervallen kasteel",
+              "type": "Overwinnnig"
             },
             {
-              "name": "Klein kasteel"
+              "name": "Klein kasteel",
+              "type": ["actie", "Overwinnnig"]
             },
             {
-              "name": "Spookkasteel kasteel"
+              "name": "Spookkasteel kasteel",
+              "type": "Overwinnnig"
             },
             {
-              "name": "Weelderig kasteel"
+              "name": "Weelderig kasteel",
+              "type": ["actie", "Overwinnnig"]
             },
             {
-              "name": "Florerend kasteel"
+              "name": "Florerend kasteel",
+              "type": "Overwinnnig"
             },
             {
-              "name": "Groot kasteel"
+              "name": "Groot kasteel",
+              "type": "Overwinnnig"
             },
             {
-              "name": "Koningskasteel"
+              "name": "Koningskasteel",
+              "type": "Overwinnnig"
             }
           ]
         }
