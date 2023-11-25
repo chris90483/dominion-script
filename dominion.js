@@ -84,7 +84,7 @@ function maybeAddRandomLandmark() {
 
 // Allies: ally decision
 const alliesBox = dominion.boxes.find(b => b.name === 'allies');
-if (alliesBox && kingdom.some(p => p.box.name === "allies")) {
+if (kingdom.some(p => p.pile.types && p.pile.types.includes("Liason"))) {
   const ally = alliesBox.allies[Math.floor(Math.random() * alliesBox.allies.length)];
   console.log(`Bondgenoot: ${ally.name}`);
   cardShapedThings.push(ally);
