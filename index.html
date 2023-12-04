@@ -6,9 +6,37 @@
 		let output = main();
 		document.querySelector("p").innerText = output;
 	}
+	
+	const onOptionsButtonClick = () => {
+		const optionsContainer = document.querySelector("options-container");
+		for (const boxName of Object.keys(dominion.boxNames)) {
+			const checkBox = document.createElement("input");
+			checkBox.type = "checkbox";
+			checkBox.id = boxName;
+			checkBox.onclick = () => {
+				if (!options.allowedBoxNames) {
+					options.allowedBoxNames = [boxName];
+					return;
+				}
+				if (options.allowedBoxNames.includes(boxName)) {
+					options.allowedBoxNames = options.allowedBoxNames.filter(n => n !== boxName);
+				} else {
+					options.allowedBoxNames = [...options.allowedBoxNames, boxName];
+				}
+				console.debug(options);
+			}
+			const label = document.createElement("label");
+			label.for = boxName;
+			label.innerText = dominion.boxNames[boxName];
+			document.querySelector("#options-container").appendChild(checkBox);
+			document.querySelector("#options-container").appendChild(label);
+		}
+	}
 </script>
 </head>
 <body>
+<button onclick="onOptionsButtonClick()">Opties</button>
+<div id="options-container"></div>
 <button onclick="generate()">Genereer Dominion-spel</button>
 <p id="out"></p>
 </body>

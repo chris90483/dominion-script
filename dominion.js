@@ -1,14 +1,13 @@
 
 let fs;
+let dominion = {};
+let options = {};
 
 let isBrowser = typeof window !== 'undefined';
 let isNodeJs = typeof module !== 'undefined' && module.exports;
 
 let main = () => {
 	let result = "";
-
-	const dominion = JSON.parse(
-			fs.readFileSync('./dominion_nl.json', 'utf8'));
 
 	const defaultProbabilities = {
 	  "menagerie": {
@@ -22,19 +21,23 @@ let main = () => {
 		result += "\n";
 	}
 	const kingdom = [];
+	let boxes = dominion.boxes;
+	if (options && options.allowedBoxNames && options.allowedBoxNames.length > 0) {
+		boxes = boxes.filter(b => options.allowedBoxNames.includes(b.name));
+	}
 
 	// kingdom determination
 	for (let i = 0; i < 10; i++) {
 		let box, pile;
 		do {
-			box = dominion.boxes[Math.floor(Math.random() * dominion.boxes.length)];
+			box = boxes[Math.floor(Math.random() * boxes.length)];
 
-		let pileOptions = [...box.cards];
-		if (box.combinedPiles) {
-		  pileOptions = pileOptions.concat(box.combinedPiles);
-		}
+			let pileOptions = [...box.cards];
+			if (box.combinedPiles) {
+			  pileOptions = pileOptions.concat(box.combinedPiles);
+			}
 
-		pile = pileOptions[Math.floor(Math.random() * pileOptions.length)];
+			pile = pileOptions[Math.floor(Math.random() * pileOptions.length)];
 		} while (kingdom.some(p => p.pile.name === pile.name && p.box.name === box.name));
 		
 		kingdom.push({box, pile});
@@ -134,12 +137,12 @@ let main = () => {
 if (isBrowser) {
 	fetch('dominion_nl.json')
 		.then(res => res.json())
-		.then(dominion => {
-			fs = { readFileSync: (_, __) => JSON.stringify(dominion) };	
-		})
+		.then(obj => dominion = obj)
 		.catch(err => alert(`kon de dominion data niet laden: ${err.message}`));
 } else if (isNodeJs) {
 	fs = require('fs');
+	dominion = JSON.parse(
+		fs.readFileSync('./dominion_nl.json', 'utf8'));
 	const result = main();
 	for (const line of result.split("\n")) {
 		console.log(line);
