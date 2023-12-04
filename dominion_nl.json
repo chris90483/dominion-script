@@ -9,6 +9,20 @@
     "cornucopia": "Overvloed",
     "empires": "Keizerrijken"
   },
+  "cardShapedThingTypeNames": {
+    "landmarks": {
+      "plural": "Bezienswaardigheden",
+      "singular": "Bezienswaardigheid"
+    },
+    "events": {
+      "plural": "Gebeurtenissen",
+      "singular": "Gebeurtenis"
+    },
+    "ways": {
+      "plural": "Sporen",
+      "singular": "Spoor"
+    }
+  },
   "boxes": [
     {
       "name": "basegame (2nd edition)",
