@@ -134,6 +134,10 @@ let main = () => {
 	return result;
 }
 
+function getDominion() {
+	return dominion;
+}
+
 if (isBrowser) {
 	fetch('dominion_nl.json')
 		.then(res => res.json())
