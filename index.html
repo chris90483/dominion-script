@@ -17,6 +17,7 @@
 			const checkBox = document.createElement("input");
 			checkBox.type = "checkbox";
 			checkBox.id = boxName;
+			checkBox.checked = options && options.allowedBoxNames && options.allowedBoxNames.includes(boxName);
 			checkBox.onclick = () => {
 				if (!options.allowedBoxNames) {
 					options.allowedBoxNames = [boxName];
