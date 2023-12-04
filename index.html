@@ -8,7 +8,8 @@
 	}
 	
 	const onOptionsButtonClick = () => {
-		const optionsContainer = document.querySelector("options-container");
+		const optionsContainer = document.querySelector("#options-container");
+		optionsContainer.replaceChildren();
 		for (const boxName of Object.keys(dominion.boxNames)) {
 			const checkBox = document.createElement("input");
 			checkBox.type = "checkbox";
@@ -28,8 +29,9 @@
 			const label = document.createElement("label");
 			label.for = boxName;
 			label.innerText = dominion.boxNames[boxName];
-			document.querySelector("#options-container").appendChild(checkBox);
-			document.querySelector("#options-container").appendChild(label);
+			
+			optionsContainer.appendChild(checkBox);
+			optionsContainer.appendChild(label);
 		}
 	}
 </script>
