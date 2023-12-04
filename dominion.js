@@ -64,22 +64,22 @@ const menagerieBox = dominion.boxes.find(b => b.name === 'menagerie');
 if (menagerieBox && kingdom.some(p => p.box.name === "menagerie")) {
   if (Math.random() < defaultProbabilities.menagerie.includeWays) {
     const way = menagerieBox.ways[Math.floor(Math.random() * menagerieBox.ways.length)];
-    additionalMessages.push(`${dominion.boxNames.menagerie}: ${way.name} (${dominion.cstTypeNames.ways.singular})`);
+    additionalMessages.push(`${dominion.boxNames.menagerie}: ${way.name} (${dominion.cardShapedThingTypeNames.ways.singular})`);
     cardShapedThings.push(way);
   }
 }
 
 function randomCardShapedThing(type) {
   const csts = dominion.boxes
-    .filter(box => !!box[type])
-    .filter(box => kingdom.some(p => p.box.name === box.name))
+    .filter(box => !!box[type]) /* only select boxes that have the specified cst type */
+    .filter(box => kingdom.some(p => p.box.name === box.name)) /* only boxes that have at least 1 card in the kingdom */
     .map(box => box[type]
-      .map(cst => {return {...cst, boxName: box.name, type}})
+      .map(cst => {return {...cst, boxName: box.name, type}}) /* create options for the csts */
     )
-    .reduce((res, nextCsts) => res.concat(nextCsts), [])
+    .reduce((res, nextCsts) => res.concat(nextCsts), []) /* reduce results to single list */
     .filter(cst => 
       !cardShapedThings.some(thing => thing.name === cst.name) &&
-      !cardShapedThings.some(thing => thing.type === cst.type));
+      !cardShapedThings.some(thing => thing.type === cst.type)); /* select only csts that are not already picked */
 
   if (csts.length === 0) {
     // no valid candidate found.
@@ -104,7 +104,7 @@ function decideLandmarksEvents() {
     const cst = randomCardShapedThing(type);
     
     if (!!cst && Math.random() < defaultProbabilities[type]) {
-      additionalMessages.push(`${dominion.boxNames[cst.boxName]}: ${cst.name} (${dominion.cstTypeNames[type].singular})`);
+      additionalMessages.push(`${dominion.boxNames[cst.boxName]}: ${cst.name} (${dominion.cardShapedThingTypeNames[type].singular})`);
       cardShapedThings.push(cst);
     }
   }

@@ -9,7 +9,7 @@
     "cornucopia": "Overvloed",
     "empires": "Keizerrijken"
   },
-  "cstTypeNames": {
+  "cardShapedThingTypeNames": {
     "landmarks": {
       "plural": "Bezienswaardigheden",
       "singular": "Bezienswaardigheid"
