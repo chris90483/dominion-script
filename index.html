@@ -2,14 +2,14 @@
 <head>
 <script type="text/javascript" src="dominion.js"></script>
 <script type="text/javascript">
-	setTimeout(() => {
+	const generate = () => {
 		let output = main();
-		console.log(output);
 		document.querySelector("p").innerText = output;
-	}, 1000);
+	}
 </script>
 </head>
 <body>
+<button onclick="generate()">Genereer Dominion-spel</button>
 <p id="out"></p>
 </body>
 </html>
