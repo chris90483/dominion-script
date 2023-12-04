@@ -1,7 +1,10 @@
 <html>
 <head>
 <script type="text/javascript" src="dominion.js"></script>
+<script type="text/javascript" src="cookie_functions.js"></script>
 <script type="text/javascript">
+	options = getOptionsCookie() ?? options;
+
 	const generate = () => {
 		let output = main();
 		document.querySelector("p").innerText = output;
@@ -24,7 +27,7 @@
 				} else {
 					options.allowedBoxNames = [...options.allowedBoxNames, boxName];
 				}
-				console.debug(options);
+				setOptionsCookie(options);
 			}
 			const label = document.createElement("label");
 			label.for = boxName;
