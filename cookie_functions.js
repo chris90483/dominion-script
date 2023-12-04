@@ -20,5 +20,5 @@ function setOptionsCookie(optionsObject, expirationDays = 365) {
   const optionsString = encodeURIComponent(JSON.stringify(optionsObject));
   const expirationDate = new Date();
   expirationDate.setDate(expirationDate.getDate() + expirationDays);
-  document.cookie = `options=${optionsString}; expires=${expirationDate.toUTCString()}; path=/`;
+  document.cookie = `options=${optionsString}; expires=${expirationDate.toUTCString()}; path=/; SameSite=None; Secure`;
 }
