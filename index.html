@@ -1,0 +1,56 @@
+<html>
+<head>
+<script type="text/javascript" src="dominion.js"></script>
+<script type="text/javascript" src="cookie_functions.js"></script>
+<script type="text/javascript">
+	options = getOptionsCookie() ?? options;
+
+	const generate = () => {
+		let output = main();
+		document.querySelector("#out").innerText = output;
+	}
+	
+	const onOptionsButtonClick = () => {
+		const optionsContainer = document.querySelector("#options-container");
+		optionsContainer.replaceChildren();
+		for (const boxName of Object.keys(dominion.boxNames)) {
+			const checkBox = document.createElement("input");
+			checkBox.type = "checkbox";
+			checkBox.id = boxName;
+			checkBox.checked = options && options.allowedBoxNames && options.allowedBoxNames.includes(boxName);
+			checkBox.onclick = () => {
+				if (!options.allowedBoxNames) {
+					options.allowedBoxNames = [boxName];
+					return;
+				}
+				if (options.allowedBoxNames.includes(boxName)) {
+					options.allowedBoxNames = options.allowedBoxNames.filter(n => n !== boxName);
+				} else {
+					options.allowedBoxNames = [...options.allowedBoxNames, boxName];
+				}
+				setOptionsCookie(options);
+			}
+			const label = document.createElement("label");
+			label.for = boxName;
+			label.innerText = dominion.boxNames[boxName];
+			
+			optionsContainer.appendChild(checkBox);
+			optionsContainer.appendChild(label);
+		}
+	}
+</script>
+</head>
+<body>
+<div>
+	<div>
+		<p>Deze website gebruikt functionele cookies om de opties op te slaan.</p>
+		<button onclick="onOptionsButtonClick()">Opties</button>
+		<div id="options-container"></div>
+		<button onclick="generate()">Genereer Dominion-spel</button>
+	</div>
+	<div>
+		<p id="out"></p>
+	</div>
+<div>
+</body>
+</html>
