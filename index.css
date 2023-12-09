@@ -1,0 +1,71 @@
+@font-face {
+  font-family: "Playfair";
+  src: url("PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  background: url(bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1, p {
+  margin: 0;
+}
+
+#page-content,
+button {
+  font-size: 16px;
+  font-family: "Playfair";
+}
+
+#page-content {
+  background-color: rgba(200, 200, 200, 0.75);
+  border-radius: 5px;
+  padding: 2em;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+#box-filter-options-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-filter-option:hover, .box-filter-option *:hover {
+  cursor: pointer;
+}
+
+
+/* width-specific rules */
+/* large */
+@media only screen and (min-width: 700px) {
+  #page-content {
+    width: min(800px, 98vw);
+  }
+
+  .box-filter-option {
+    flex: 1 0 33.3%;
+    max-width: calc(33.3% - 1em); /* Adjust for gap between items */
+  }
+}
+
+/* medium */
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+  .box-filter-option {
+    flex: 1 0 50%;
+    max-width: calc(50% - 1em); /* Adjust for gap between items */
+  }
+}
+
+/* small */
+@media only screen and (max-width: 500px) {
+  .box-filter-option {
+    flex: 1 0 100%;
+    max-width: calc(100% - 1em); /* Adjust for gap between items */
+  }
+}
