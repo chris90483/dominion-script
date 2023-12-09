@@ -3,7 +3,6 @@ let fs;
 let dominion = {};
 let options = {};
 
-let isBrowser = typeof window !== 'undefined';
 let isNodeJs = typeof module !== 'undefined' && module.exports;
 
 let main = () => {
@@ -134,12 +133,7 @@ let main = () => {
 	return result;
 }
 
-if (isBrowser) {
-	fetch('dominion_nl.json')
-		.then(res => res.json())
-		.then(obj => dominion = obj)
-		.catch(err => alert(`kon de dominion data niet laden: ${err.message}`));
-} else if (isNodeJs) {
+if (isNodeJs) {
 	fs = require('fs');
 	dominion = JSON.parse(
 		fs.readFileSync('./dominion_nl.json', 'utf8'));

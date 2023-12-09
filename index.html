@@ -1,56 +1,76 @@
-<html>
+<!DOCTYPE html>
+<html lang="nl">
 <head>
+<title>Dominion Script</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script type="text/javascript" src="dominion.js"></script>
 <script type="text/javascript" src="cookie_functions.js"></script>
 <script type="text/javascript">
 	options = getOptionsCookie() ?? options;
 
-	const generate = () => {
-		let output = main();
-		document.querySelector("#out").innerText = output;
-	}
-	
-	const onOptionsButtonClick = () => {
-		const optionsContainer = document.querySelector("#options-container");
+  const onOptionClick = (event, checkBox, boxName) => {
+    event.preventDefault();
+
+    console.log("click")
+    if (!options.allowedBoxNames) {
+      options.allowedBoxNames = [boxName];
+      return;
+    }
+    if (options.allowedBoxNames.includes(boxName)) {
+      options.allowedBoxNames = options.allowedBoxNames.filter(n => n !== boxName);
+    } else {
+      options.allowedBoxNames = [...options.allowedBoxNames, boxName];
+    }
+    setOptionsCookie(options);
+    checkBox.checked = !checkBox.checked;
+  }
+
+  const initOptions = () => {
+		const optionsContainer = document.querySelector("#box-filter-options-container");
 		optionsContainer.replaceChildren();
 		for (const boxName of Object.keys(dominion.boxNames)) {
 			const checkBox = document.createElement("input");
 			checkBox.type = "checkbox";
 			checkBox.id = boxName;
 			checkBox.checked = options && options.allowedBoxNames && options.allowedBoxNames.includes(boxName);
-			checkBox.onclick = () => {
-				if (!options.allowedBoxNames) {
-					options.allowedBoxNames = [boxName];
-					return;
-				}
-				if (options.allowedBoxNames.includes(boxName)) {
-					options.allowedBoxNames = options.allowedBoxNames.filter(n => n !== boxName);
-				} else {
-					options.allowedBoxNames = [...options.allowedBoxNames, boxName];
-				}
-				setOptionsCookie(options);
-			}
+      checkBox.onclick = (event) => onOptionClick(event, checkBox, boxName);
 			const label = document.createElement("label");
 			label.for = boxName;
 			label.innerText = dominion.boxNames[boxName];
+
+      const div = document.createElement("div");
+      div.classList.add('box-filter-option');
+      div.onclick = (event) => onOptionClick(event, checkBox, boxName);
 			
-			optionsContainer.appendChild(checkBox);
-			optionsContainer.appendChild(label);
+			div.appendChild(checkBox);
+			div.appendChild(label);
+      optionsContainer.appendChild(div);
 		}
 	}
+
+  const generate = () => {
+		let output = main();
+		document.querySelector("#out").innerText = output;
+	}
+
+  fetch('dominion_nl.json')
+		.then(res => res.json())
+		.then(obj => dominion = obj)
+    .then(initOptions)
+		.catch(err => alert(`kon de dominion data niet laden: ${err.message}`));
 </script>
+<link rel="stylesheet" href="index.css">
 </head>
 <body>
-<div>
-	<div>
-		<p>Deze website gebruikt functionele cookies om de opties op te slaan.</p>
-		<button onclick="onOptionsButtonClick()">Opties</button>
-		<div id="options-container"></div>
-		<button onclick="generate()">Genereer Dominion-spel</button>
-	</div>
-	<div>
-		<p id="out"></p>
-	</div>
-<div>
+<div id="page-content">
+  <h1>Dominion Script</h1>
+  <p>Achtergrond: Barend Cornelis Koekkoek - Zomerlandschap met kasteel (1851). Deze website gebruikt functionele cookies om de opties op te slaan. </p>
+  <div id="options-container">
+    <div>Dozen</div>
+    <div id="box-filter-options-container"></div>
+  </div>
+  <button onclick="generate()">Genereer Dominion-spel</button>
+  <p id="out"></p>
+</div>
 </body>
 </html>
