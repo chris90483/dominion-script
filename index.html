@@ -8,21 +8,26 @@
 <script type="text/javascript">
 	options = getOptionsCookie() ?? options;
 
-  const onOptionClick = (event, checkBox, boxName) => {
-    event.preventDefault();
+  const boxNameToId = (boxName) => {
+    const matches = boxName.match(/[a-zA-Z]/g);
+    return matches ? matches.join('') : '';
+  }
 
-    console.log("click")
+  const onOptionClick = (event, boxName) => {
     if (!options.allowedBoxNames) {
-      options.allowedBoxNames = [boxName];
-      return;
+      options.allowedBoxNames = [];
     }
+
+    const otherBoxNames = options.allowedBoxNames.filter(n => n !== boxName);
     if (options.allowedBoxNames.includes(boxName)) {
-      options.allowedBoxNames = options.allowedBoxNames.filter(n => n !== boxName);
+      options.allowedBoxNames = otherBoxNames;
+      document.querySelector(`#${boxNameToId(boxName)}`).checked = false;
     } else {
-      options.allowedBoxNames = [...options.allowedBoxNames, boxName];
+      options.allowedBoxNames = [...otherBoxNames, boxName];
+      document.querySelector(`#${boxNameToId(boxName)}`).checked = true;
     }
+
     setOptionsCookie(options);
-    checkBox.checked = !checkBox.checked;
   }
 
   const initOptions = () => {
@@ -31,16 +36,16 @@
 		for (const boxName of Object.keys(dominion.boxNames)) {
 			const checkBox = document.createElement("input");
 			checkBox.type = "checkbox";
-			checkBox.id = boxName;
+			checkBox.id = boxNameToId(boxName);
 			checkBox.checked = options && options.allowedBoxNames && options.allowedBoxNames.includes(boxName);
-      checkBox.onclick = (event) => onOptionClick(event, checkBox, boxName);
-			const label = document.createElement("label");
+			
+      const label = document.createElement("label");
 			label.for = boxName;
 			label.innerText = dominion.boxNames[boxName];
-
+      
       const div = document.createElement("div");
+      div.onclick = (event) => onOptionClick(event, boxName);
       div.classList.add('box-filter-option');
-      div.onclick = (event) => onOptionClick(event, checkBox, boxName);
 			
 			div.appendChild(checkBox);
 			div.appendChild(label);
@@ -69,7 +74,7 @@
     <div>Dozen</div>
     <div id="box-filter-options-container"></div>
   </div>
-  <button onclick="generate()">Genereer Dominion-spel</button>
+  <button id="generate-game-button" onclick="generate()">Genereer Dominion-spel</button>
   <p id="out"></p>
 </div>
 </body>
