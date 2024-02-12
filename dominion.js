@@ -12,6 +12,10 @@ let main = () => {
 	  "menagerie": {
 		"includeWays": 0.3
 	  },
+	  "renaissance": {
+		"firstProject": 0.8,
+		"secondProject": 0.8
+	  },
 	  "events": 0.5,
 	  "landmarks": 0.5
 	};
@@ -57,6 +61,22 @@ let main = () => {
 		.length / 10;
 	  //todo: platina / kolonie ook vertaald in de dominion json zetten
 		additionalMessages.push(`Platina / kolonie: ${Math.random() < probability ? 'ja' : 'nee'}`);
+	}
+
+	// Renaissance: projects
+	const renaissanceBox = dominion.boxes.find(b => b.name === 'renaissance');
+	if (kingdom.some(p => p.box.name === "renaissance")) {
+	  if (Math.random() < defaultProbabilities.renaissance.firstProject) {
+            const firstProject = renaissanceBox.projects[Math.floor(Math.random() * renaissanceBox.projects.length)];
+	    additionalMessages.push(`${dominion.boxNames.renaissance}: ${firstProject.name} (${dominion.cardShapedThingTypeNames.projects.singular})`);
+
+            if (Math.random() < defaultProbabilities.renaissance.secondProject) {
+              const remainingProjects = renaissanceBox.projects.filter(p => p.name !== firstProject.name);
+              const secondProject = remainingProjects[Math.floor(Math.random() * remainingProjects.length)];
+
+	      additionalMessages.push(`${dominion.boxNames.renaissance}: ${secondProject.name} (${dominion.cardShapedThingTypeNames.projects.singular})`);
+	    }
+	  }
 	}
 
 	// see https://wiki.dominionstrategy.com/index.php/Landscape
