@@ -7,7 +7,8 @@
     "prosperity": "Welvaart",
     "alchemy": "De Alchemisten",
     "cornucopia": "Overvloed",
-    "empires": "Keizerrijken"
+    "empires": "Keizerrijken",
+	"renaissance" : "Renaissance"
   },
   "cardShapedThingTypeNames": {
     "landmarks": {
@@ -21,6 +22,10 @@
     "ways": {
       "plural": "Sporen",
       "singular": "Spoor"
+    },
+    "projects": {
+      "plural": "Projecten",
+      "singular": "Project"
     }
   },
   "boxes": [
@@ -1845,6 +1850,228 @@
         },
         {
           "name": "Overheersing"
+        }
+      ]
+    },
+    {
+      "name": "renaissance",
+      "cards": [
+        {
+          "name": "Beeldhouwer",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Uitvinder",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Oude heks",
+          "types": [
+            "Actie",
+            "Aanval"
+          ]
+        },
+        {
+          "name": "Bergdorp",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Schuilplaats",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Experiment",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Schatbewaarder",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Slechterik",
+          "types": [
+            "Actie",
+            "Aanval"
+          ]
+        },
+        {
+          "name": "Onderzoek",
+          "types": [
+            "Actie",
+            "Duurzaam"
+          ]
+        },
+        {
+          "name": "Zijdekoopman",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Vaandeldrager",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Beschermheer",
+          "types": [
+            "Actie",
+            "Reactie"
+          ]
+        },
+        {
+          "name": "Kamerbedienden",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Geleerde",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Dukaat",
+          "types": [
+            "Geld"
+          ]
+        },
+        {
+          "name": "Toneelgezelschap",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Verbetering",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Priester",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Specerijen",
+          "types": [
+            "Geld"
+          ]
+        },
+        {
+          "name": "Grenswacht",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Ziener",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Ronselaar",
+          "types": [
+            "Actie"
+          ]
+        },
+        {
+          "name": "Scepter",
+          "types": [
+            "Geld"
+          ]
+        },
+        {
+          "name": "Vrachtschip",
+          "types": [
+            "Actie",
+            "Duurzaam"
+          ]
+        },
+        {
+          "name": "IJzervreter",
+          "types": [
+            "Actie"
+          ]
+        }
+      ],
+      "projects": [
+        {
+          "name": "Braderie"
+        },
+        {
+          "name": "Sterrenkaart"
+        },
+        {
+          "name": "Riolen"
+        },
+        {
+          "name": "Vloot"
+        },
+        {
+          "name": "Kapitalisme"
+        },
+        {
+          "name": "Burcht"
+        },
+        {
+          "name": "Academie"
+        },
+        {
+          "name": "Vernieuwing"
+        },
+        {
+          "name": "Duistere samenzwering"
+        },
+        {
+          "name": "Spektakel"
+        },
+        {
+          "name": "Kathedraal"
+        },
+        {
+          "name": "Gildehuis"
+        },
+        {
+          "name": "Silo's"
+        },
+        {
+          "name": "Kazerne"
+        },
+        {
+          "name": "Stadspoort"
+        },
+        {
+          "name": "Wegennet"
+        },
+        {
+          "name": "Ontdekkingsreis"
+        },
+        {
+          "name": "Wisselbouw"
+        },
+        {
+          "name": "Kanaal"
+        },
+        {
+          "name": "Plein"
         }
       ]
     }
